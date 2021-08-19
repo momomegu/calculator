@@ -9,7 +9,7 @@
       <body>
         <!-- ここに記述していきましょう！ -->
         
-        <input type="text" id="result">
+        <input class="result-display">
         <div>
           <button onclick="append( '7' )" >7</button>
           <button onclick="append( '8' )" >8</button>
@@ -30,14 +30,13 @@
         </div>
         <div>
           <button onclick="append( '0' )" >0</button>
-          <button onclick="append( '00' )" >00</button>
+          <button class="zero" onclick="append( '00' )" >00</button>
           <button onclick="append( '.' )" >.</button>
           <button onclick="append( '/' )" >/</button>
         </div>
-        <div>
-          <button onclick="update( '' )" >AC</button>
-          <button onclick="calc()">=</button>
-        </div>
+      
+        <button class="AC" onclick="update( '' )" >AC</button>
+        <button class="eqal" onclick="calc()">=</button>
         
         <script>
         function update( _v )
